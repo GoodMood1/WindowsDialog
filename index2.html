@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link type="text/css" href="../jqueryui/jquery-ui.min.css" rel="Stylesheet" />
+    
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+   
+    <script src="../jqueryui/jquery-ui.min.js"></script>
+    <style>
+
+    </style>
+
+    <script>
+        $(document).ready(
+            function () {
+                //1
+        $('#OpenWindow').click(
+()=>{
+//     newWin = window.open("index.html","Important","resizable");
+// newWin.moveTo(10,10);
+// newWin.resizeTo(300,400);
+var newWin = window.open("index.html", "Important", "width=200,height=200");
+newWin.document.write(`<script>window.opener.document.body.innerHTML = `(document.getElementById('t1').html())`</scr` + "ipt>");
+})
+
+
+
+
+            })
+    </script>
+</head>
+<body>
+    <textarea id="t1"></textarea>
+ <button id="OpenWindow">Тык</button> 
+ <button id="openWindow">Тык 2</button> 
+</body>
+</html> 
+

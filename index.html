@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link type="text/css" href="../jqueryui/jquery-ui.min.css" rel="Stylesheet" />
+    
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+   
+    <script src="../jqueryui/jquery-ui.min.js"></script>
+    <style>
+    </style>
+
+
+    <script>
+        $(document).ready(
+            function () {
+
+
+// $('#reload').click(
+//     ()=>{location.reload();}
+// )
+
+// $('#gopage').click(
+//     ()=>{
+//         location.replace($('#newpage').val());
+//     }
+// )
+
+// });
+
+
+
+// $('#OpenWindow').click(
+// ()=>{
+//     newWin = window.open("./index.html","Impoertant","resizable");
+// newWin.moveTo(10,10);
+// newWin.resizeTo(300,400);
+// newWin.parent.console.log(newWin.parent);
+// }
+// )
+// window.exchange=function(sometext){
+// console.log(sometext);
+// }
+// $("sendt").click(()=>{
+//     if(window.parent){
+//         try{
+//             window.parent.exchange("ho");
+
+//         }catch(e){
+// console.error("Errorrrr"+$(e));
+//         }
+//     }
+// }
+// exchange('1');
+
+
+//1
+$('#t1').change(function(){
+var newWin = window.open("index2.html", "Important", "width=200,height=200");
+            })
+
+}
+        );
+    </script>
+</head>
+<body>
+<p>Child</p>
+<textarea id="t1"></textarea>
+</body>
+</html> 
+
